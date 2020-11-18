@@ -1,0 +1,40 @@
+@import "~bootstrap/scss/bootstrap"
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap')
+*
+  box-sizing: border-box
+  background-color: #fefefe
+
+.master-container
+  .header-container
+    width: 100%
+    display: flex
+    justify-content: space-around
+    align-items: center
+    padding: 15px
+
+    .links
+      font-family: 'Lato', sans-serif
+      color: #121212
+      font-size: 1.4rem
+
+    .phone-number
+      font-family: 'Lato', sans-serif
+      color: inherit
+      text-decoration: none
+      font-size: 1.4rem
+
+    .header-children
+      &:hover
+        color: #93daf8
+        text-decoration: none
+
+    .logo
+      width: 10rem
+
+  .slides-container
+
+    .carousel-inner
+      height: calc(100vh - 9rem)
+
+    .carousel-indicators
+      display: none
