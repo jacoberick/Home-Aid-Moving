@@ -1,22 +1,34 @@
 import React from "react";
-import HeaderLogo from "../assets/black-home-aid-full.png";
+import HeaderLogo from "../assets/header-logo.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMobileAlt } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
     <div className="header-container">
-      <img className="logo" src={HeaderLogo} alt="Home-Aid Logo" />
-      <a className="links header-children" href="">
-        Testimonials
-      </a>
-      <a className="links header-children" href="">
-        About Us
-      </a>
-      <a className="links header-children" href="">
-        Contact
-      </a>
-      <a className="phone-number header-children" href="tel:615-482-4796">
-        (615) 482-4796
-      </a>
+      <div className="header-left">
+        <img className="logo" src={HeaderLogo} alt="Home-Aid Logo" />
+      </div>
+      <div className="header-right">
+        <a className="links" href="">
+          Testimonials
+        </a>
+        <a className="links" href="">
+          About Us
+        </a>
+        <a className="links" href="">
+          Contact
+        </a>
+        <div className="contact-container">
+          <FontAwesomeIcon className="phone-icon" icon={faMobileAlt} />
+          <div className="number-description">
+            <p className="free-quote">CALL FOR A FREE QUOTE</p>
+            <a className="phone-number links" href="tel:615-482-4796">
+              (615) 482-4796
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
