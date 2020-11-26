@@ -19,8 +19,8 @@ const Header = () => {
         <a className="links" href="">
           Contact
         </a>
-        <div className="contact-container">
-          <FontAwesomeIcon className="phone-icon" icon={faMobileAlt} />
+        <div className="icon-container">
+          <FontAwesomeIcon className="icon" icon={faMobileAlt} />
           <div className="number-description">
             <p className="free-quote">CALL FOR A FREE QUOTE</p>
             <a className="phone-number links" href="tel:615-482-4796">
