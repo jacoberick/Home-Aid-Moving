@@ -48,34 +48,8 @@ const gallery = () => {
     },
   ];
 
-  console.log(allPhotos);
-
-  // const photoPackOne = [
-  //   { id: 1, src: galleryOne },
-  //   { id: 2, src: galleryTwo },
-  //   { id: 3, src: galleryThree },
-  // ];
-  //
-  // const photoPackTwo = [
-  //   { id: 4, src: galleryFour },
-  //   { id: 5, src: galleryFive },
-  //   { id: 6, src: gallerySix },
-  // ];
-  //
-  // const photoPackThree = [
-  //   { id: 7, src: gallerySeven },
-  //   { id: 8, src: gallerySeven },
-  //   { id: 9, src: galleryNine },
-  // ];
-  //
-  // const photoPackFour = [
-  //   { id: 10, src: galleryTen },
-  //   { id: 11, src: galleryEleven },
-  //   { id: 12, src: galleryTwelve },
-  // ];
-
   return (
-    <div className="gallery-container">
+    <div id="galleryContainer" className="gallery-container">
       <h1 className="gallery-title">Gallery</h1>
       <div className="photos-container">
         {allPhotos.map((row, id) => (

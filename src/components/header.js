@@ -20,6 +20,9 @@ const Header = () => {
         <a className="links" href="#aboutContainer">
           About Us
         </a>
+        <a className="links" href="#galleryContainer">
+          Gallery
+        </a>
         <a className="links" href="">
           Contact
         </a>
