@@ -3,12 +3,12 @@ import BoxStack from "../assets/imgs/boxStack.png";
 
 const AboutUs = () => {
   return (
-    <div className="about-container">
+    <div className="about-container" id="aboutContainer">
       <div className="left-about">
         <img className="box-stack-img" src={BoxStack} alt="" />
       </div>
       <div className="right-about">
-        <h1 className="about-title">Who We Are</h1>
+        <h1 className="about-title">Who we are...</h1>
         <div className="description-container">
           <p className="about-description">
             At Home-Aid Moving we understand how stressful moving day is. Our
