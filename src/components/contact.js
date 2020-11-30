@@ -8,7 +8,7 @@ const Contact = () => {
         <a className="phone-number" href="tel:615-482-4796">
           (615)482-4796
         </a>
-        <p className="hours">Open every day from 8AM to 5PM</p>
+        <p className="hours">Open every day from 8AM to 5PM.</p>
       </div>
     </div>
   );

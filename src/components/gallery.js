@@ -12,7 +12,7 @@ import galleryTen from "../assets/imgs/gallery/10.jpg";
 import galleryEleven from "../assets/imgs/gallery/11.jpg";
 import galleryTwelve from "../assets/imgs/gallery/12.jpg";
 
-const gallery = () => {
+const gallery = ({ modal, setModal }) => {
   const allPhotos = [
     {
       id: 1,
@@ -55,7 +55,13 @@ const gallery = () => {
         {allPhotos.map((row, id) => (
           <div key={id} className="photo-row">
             {row.photoPack.map((photo, id) => (
-              <div key={id} className="photo-crop">
+              <div
+                key={id}
+                className="photo-crop"
+                onClick={() =>
+                  setModal({ ...modal, src: photo.src, active: 1 })
+                }
+              >
                 <img className="photo" src={photo.src} alt="" />
               </div>
             ))}
