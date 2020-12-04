@@ -23,7 +23,7 @@ const Header = () => {
         <a className="links" href="#galleryContainer">
           Gallery
         </a>
-        <a className="links" href="">
+        <a className="links" href="#contactContainer">
           Contact
         </a>
         <div className="icon-container">

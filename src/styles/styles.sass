@@ -1,9 +1,10 @@
 @import "~bootstrap/scss/bootstrap"
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap')
-// @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap')
 
 $haBlue: #93daf8
+$EightFourtySeven: 'only screen and (max-width: 847px)'
+
 *
   box-sizing: border-box
 
@@ -62,7 +63,52 @@ $haBlue: #93daf8
           .phone-number
             margin-left: 0
 
+    //941px MEDIA QUERY
+    @media only screen and (max-width: 941px)
+      .header-left
+        .logo
+          width: 8rem
+      .header-right
+        .links
+          font-size: 1rem
+
+        .icon-container
+          .icon
+            font-size: 1.8rem
+
+          .number-description
+            .free-quote
+              font-size: .6rem
+
+    @media #{$EightFourtySeven}
+      display: block
+
+      .header-left
+        display: flex
+        justify-content: center
+
+        .logo
+
+      .header-right
+        display: flex
+        justify-content: center
+
+        .links
+
+
+        .icon-container
+          .icon
+
+
+          .number-description
+            .free-quote
+
   .slides-container
+    height: calc(100vh - 9rem)
+    overflow: hidden
+
+    @media only screen and (max-width: 1009px)
+      height: auto
 
     .carousel-indicators
       display: none
@@ -71,8 +117,6 @@ $haBlue: #93daf8
       display: none
 
     .carousel-inner
-      height: calc(100vh - 9rem)
-
       .carousel-item
         position: relative
 
@@ -120,10 +164,13 @@ $haBlue: #93daf8
       align-items: center
       justify-content: space-between
 
+      @media only screen and (max-width: 992px )
+        margin: 0
+
     .right-about
       width: calc(60% - 2rem)
       display: flex
-      align-items: start
+      align-items: flex-start
       flex-direction: column
       padding: 0rem
 
@@ -139,6 +186,7 @@ $haBlue: #93daf8
 
       .description-container
         font-family: 'Lato', sans-serif
+        min-width: 31.25rem
 
         .about-description
           font-size: 1.1rem
@@ -154,6 +202,21 @@ $haBlue: #93daf8
       .box-stack-img
         margin-bottom: 2rem
 
+        @media only screen and (max-width: 1200px)
+          width: 20rem
+        @media only screen and (max-width: 992px )
+          width: 15rem
+
+    @media only screen and (max-width: 900px)
+      .container
+        margin: auto
+
+      .right-about
+        width: 100%
+
+      .left-about
+        display: none
+
   .gallery-container
     padding: 5rem
     display: flex
@@ -164,11 +227,11 @@ $haBlue: #93daf8
     position: relative
 
     .gallery-title
-      font-size: 5rem
+      font-size: 3rem
       font-family: 'Open Sans', sans-serif
-      font-weight: 500
       margin-bottom: 4rem
       color: #121212
+      font-weight: bold
 
     .photos-container
       display: flex
@@ -183,6 +246,16 @@ $haBlue: #93daf8
           width: 20rem
           overflow: hidden
           transition: .5s
+          display: flex
+          justify-content: center
+          align-items: flex-start
+
+          @media only screen and (max-width: 1100px)
+            width: 15rem
+            height: 15rem
+
+            .photo
+              width: 15rem
 
           &:hover
             transform: scale(1.1)
@@ -204,7 +277,8 @@ $haBlue: #93daf8
     overflow: hidden
 
     .contact-title
-      font-size: 4rem
+      font-size: 3rem
+      font-weight: bold
       font-family: 'Open Sans', sans-serif
       margin-bottom: 3rem
       color: #121212
@@ -226,6 +300,9 @@ $haBlue: #93daf8
         &:hover
           text-decoration: none
           color: $haBlue
+
+        @media only screen and (max-width: 992px )
+          font-size: 7rem
 
       .hours
         font-size: 2rem
@@ -250,6 +327,10 @@ $haBlue: #93daf8
         position: absolute
         top: 1rem
         right: 1rem
+        border: none
+        width: 2rem
+        height: 2rem
+        border-radius: 5px
 
       img
         max-height: 90vh
