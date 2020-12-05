@@ -93,7 +93,10 @@ $EightFourtySeven: 'only screen and (max-width: 847px)'
         display: flex
         justify-content: center
 
+
         .links
+          &:nth-child(1)
+            margin-left: 0
 
 
         .icon-container
@@ -154,6 +157,16 @@ $EightFourtySeven: 'only screen and (max-width: 847px)'
 
             &:hover
               color: $haBlue
+
+    @media #{$EightFourtySeven}
+      .carousel-inner
+        .carousel-item
+          .review-container
+            font-size: .8rem
+            width: 20rem
+
+            .name
+              margin-left: 10rem
 
   .about-container
     background-color: #dde2e4
@@ -250,13 +263,6 @@ $EightFourtySeven: 'only screen and (max-width: 847px)'
           justify-content: center
           align-items: flex-start
 
-          @media only screen and (max-width: 1100px)
-            width: 15rem
-            height: 15rem
-
-            .photo
-              width: 15rem
-
           &:hover
             transform: scale(1.1)
             cursor: pointer
@@ -266,6 +272,23 @@ $EightFourtySeven: 'only screen and (max-width: 847px)'
 
           .photo
             width: 20rem
+
+          @media only screen and (max-width: 1100px)
+            width: 15rem
+            height: 15rem
+
+            .photo
+              width: 15rem
+
+    @media #{$EightFourtySeven}
+      .photos-container
+        .photo-row
+          .photo-crop
+            width: 12.5rem
+            height: 12.5rem
+
+            .photo
+              width: 12.5rem
 
   .contact-container
     padding-bottom: 10rem
@@ -307,6 +330,18 @@ $EightFourtySeven: 'only screen and (max-width: 847px)'
       .hours
         font-size: 2rem
         font-family: 'Lato', sans-serif
+
+    @media #{$EightFourtySeven}
+      .contact-title
+        font-size: 2.5rem
+
+      .contact-content
+        .phone-number
+          font-size: 6rem
+
+        .hours
+          font-size: 1.8rem
+
 
   .modal-container
     position: fixed
