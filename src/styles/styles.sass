@@ -3,7 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap')
 
 $haBlue: #93daf8
-$EightFourtySeven: 'only screen and (max-width: 847px)'
+$Large: 'only screen and (max-width: 847px)'
+$Medium: 'only screen and (max-width: 671px)'
+$Small: 'only screen and (max-width: 500px)'
+$XtraSmall: 'only screen and (max-width: 370px)'
 
 *
   box-sizing: border-box
@@ -28,6 +31,9 @@ $EightFourtySeven: 'only screen and (max-width: 847px)'
       background-color: #121212
       display: flex
       align-items: center
+
+      .burger-bag
+        display: none
 
       .links
         color: #fefefe
@@ -68,6 +74,8 @@ $EightFourtySeven: 'only screen and (max-width: 847px)'
       .header-left
         .logo
           width: 8rem
+          height: 2.6rem
+
       .header-right
         .links
           font-size: 1rem
@@ -80,37 +88,66 @@ $EightFourtySeven: 'only screen and (max-width: 847px)'
             .free-quote
               font-size: .6rem
 
-    @media #{$EightFourtySeven}
+    @media #{$Large}
       display: block
 
       .header-left
         display: flex
         justify-content: center
 
-        .logo
-
       .header-right
         display: flex
         justify-content: center
 
-
         .links
-          &:nth-child(1)
+          &:nth-child(2)
             margin-left: 0
 
+    @media #{$Medium}
+      display: flex
+      .header-left
+
+      .header-right
+
+        .links
+          display: none
 
         .icon-container
-          .icon
+          display: none
 
+        .burger-bag
+          display: block
 
-          .number-description
-            .free-quote
+          .burger
+            width: 40px
+            height: 4px
+            border-radius: 5px
+            background-color: #fefefe
+
+            &::before, &::after
+              content: ''
+              position: absolute
+              width: 40px
+              height: 4px
+              background-color: #fefefe
+              border-radius: 5px
+
+            &::before
+              transform: translateY(-12px)
+
+            &::after
+              transform: translateY(12px)
+
+    @media #{$Small}
+      .header-left
+        .logo
+
 
   .slides-container
     height: calc(100vh - 9rem)
     overflow: hidden
 
-    @media only screen and (max-width: 1009px)
+    @media only screen and (max-width: 1009px) , only screen and (min-height: 854px)
       height: auto
 
     .carousel-indicators
@@ -122,6 +159,9 @@ $EightFourtySeven: 'only screen and (max-width: 847px)'
     .carousel-inner
       .carousel-item
         position: relative
+
+        img
+          width: 100%
 
         .review-container
           position: absolute
@@ -158,15 +198,54 @@ $EightFourtySeven: 'only screen and (max-width: 847px)'
             &:hover
               color: $haBlue
 
-    @media #{$EightFourtySeven}
+    @media #{$Large}
       .carousel-inner
         .carousel-item
+          img
+            height: 80vh
+            width: auto
           .review-container
-            font-size: .8rem
+            font-size: 1rem
             width: 20rem
+            padding: 1.5rem
 
             .name
               margin-left: 10rem
+
+    @media #{$Medium}
+      .carousel-inner
+        .carousel-item
+          .review-container
+            top: 60%
+            left: 50%
+            transform: translate(-50%, -50%)
+            width: 17rem
+            padding: 1rem
+
+            .description
+
+            .name
+              margin-left: 8rem
+
+    @media #{$Small}
+      .carousel-inner
+        .carousel-item
+          img
+            height: 60vh
+
+          .review-container
+            top: 60%
+            left: 50%
+            transform: translate(-50%, -50%)
+            width: 18rem
+            padding: 1rem
+            font-size: .9rem
+
+            .description
+
+            .name
+              margin-left: 8rem
+
 
   .about-container
     background-color: #dde2e4
@@ -230,6 +309,26 @@ $EightFourtySeven: 'only screen and (max-width: 847px)'
       .left-about
         display: none
 
+    @media #{$Medium}
+      padding: 1rem 2rem 4rem 2rem
+      .right-about
+        .about-title
+          font-size: 2.5rem
+        .description-container
+          min-width: 0
+          .about-description
+            font-size: 1rem
+
+    @media #{$Small}
+      .right-about
+        .about-title
+          font-size: 1.5rem
+
+        .description-container
+          .about-description
+            line-height: 2rem
+
+
   .gallery-container
     padding: 5rem
     display: flex
@@ -245,6 +344,13 @@ $EightFourtySeven: 'only screen and (max-width: 847px)'
       margin-bottom: 4rem
       color: #121212
       font-weight: bold
+
+      @media #{$Medium}
+        font-size: 2rem
+
+      @media #{$Small}
+        margin-bottom: 2rem
+
 
     .photos-container
       display: flex
@@ -280,15 +386,61 @@ $EightFourtySeven: 'only screen and (max-width: 847px)'
             .photo
               width: 15rem
 
-    @media #{$EightFourtySeven}
+    @media #{$Large}
       .photos-container
         .photo-row
+          margin-bottom: 1rem
+
           .photo-crop
             width: 12.5rem
             height: 12.5rem
 
+            &:nth-child(2)
+              margin: 0 1rem
+
             .photo
               width: 12.5rem
+
+    @media #{$Medium}
+      padding: 3rem
+      .photos-container
+        .photo-row
+          margin-bottom: 1rem
+
+          .photo-crop
+            width: 9rem
+            height: 9rem
+
+            &:nth-child(2)
+              margin: 0 1rem
+
+            .photo
+              width: 9rem
+
+    @media #{$Small}
+      .photos-container
+        .photo-row
+          margin-bottom: 1rem
+
+          .photo-crop
+            width: 7rem
+            height: 7rem
+
+            &:nth-child(2)
+              margin: 0 1rem
+
+            .photo
+              width: 7rem
+
+    @media #{$XtraSmall}
+      .photos-container
+        .photo-row
+          .photo-crop
+            width: 5.8rem
+            height: 5.8rem
+
+            .photo
+              width: 5.8rem
 
   .contact-container
     padding-bottom: 10rem
@@ -311,6 +463,8 @@ $EightFourtySeven: 'only screen and (max-width: 847px)'
       justify-content: center
       flex-direction: column
       align-items: center
+      max-width: 1024px
+      width: 100%
 
       .phone-number
         font-size: 8rem
@@ -331,7 +485,7 @@ $EightFourtySeven: 'only screen and (max-width: 847px)'
         font-size: 2rem
         font-family: 'Lato', sans-serif
 
-    @media #{$EightFourtySeven}
+    @media #{$Large}
       .contact-title
         font-size: 2.5rem
 
@@ -342,6 +496,40 @@ $EightFourtySeven: 'only screen and (max-width: 847px)'
         .hours
           font-size: 1.8rem
 
+    @media #{$Medium}
+      .contact-title
+        font-size: 2rem
+
+      .contact-content
+        .phone-number
+          font-size: 4rem
+
+        .hours
+          font-size: 1.5rem
+
+    @media #{$Small}
+      padding-top: 5rem
+      .contact-title
+        font-size: 1.5rem
+        margin-bottom: 1rem
+
+      .contact-content
+        .phone-number
+          font-size: 3rem
+
+        .hours
+          font-size: 1.2rem
+
+    @media #{$XtraSmall}
+      .contact-title
+        font-size: 1.3rem
+
+      .contact-content
+        .phone-number
+          font-size: 2.5rem
+
+        .hours
+          font-size: 1rem
 
   .modal-container
     position: fixed
@@ -357,16 +545,21 @@ $EightFourtySeven: 'only screen and (max-width: 847px)'
 
     .wrapper
       position: relative
+      display: flex
 
       [name="close"]
         position: absolute
-        top: 1rem
+        top: -2rem
         right: 1rem
         border: none
         width: 2rem
         height: 2rem
         border-radius: 5px
+        background: none
+        color: #fefefe
 
       img
         max-height: 90vh
         max-width: 75%
+        margin: 0 auto
+        align-self: center

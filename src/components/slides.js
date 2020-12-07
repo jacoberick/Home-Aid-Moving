@@ -10,7 +10,7 @@ const Slides = () => {
       <Carousel interval={5000}>
         {/* ITEM 1 */}
         <Carousel.Item>
-          <img className="d-block w-100" src={SlideOne} alt="First slide" />
+          <img className="d-block" src={SlideOne} alt="First slide" />
           <Reviews
             description="We couldn't be more happy with the way these guys moved us!  They were punctual, courteous, careful, responsible, and honestly the BEST MOVING EXPERIENCE we have ever had!"
             name="Daniel Veirs"
@@ -18,7 +18,7 @@ const Slides = () => {
         </Carousel.Item>
         {/* ITEM 2 */}
         <Carousel.Item>
-          <img className="d-block w-100" src={SlideTwo} alt="Third slide" />
+          <img className="d-block" src={SlideTwo} alt="Third slide" />
           <Reviews
             description="I am very grateful for this moving company. The men moving my things were very professional and kind. They kept all my possessions safe and got the job done quickly! I would definitely recommend them. I was very happy with my experience."
             name="Rachel H."
