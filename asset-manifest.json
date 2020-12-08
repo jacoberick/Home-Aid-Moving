@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/Home-Aid-Moving/static/css/main.81d26123.chunk.css",
+    "main.js": "/Home-Aid-Moving/static/js/main.5859189a.chunk.js",
+    "main.js.map": "/Home-Aid-Moving/static/js/main.5859189a.chunk.js.map",
+    "runtime-main.js": "/Home-Aid-Moving/static/js/runtime-main.529d2923.js",
+    "runtime-main.js.map": "/Home-Aid-Moving/static/js/runtime-main.529d2923.js.map",
+    "static/js/2.538af9f7.chunk.js": "/Home-Aid-Moving/static/js/2.538af9f7.chunk.js",
+    "static/js/2.538af9f7.chunk.js.map": "/Home-Aid-Moving/static/js/2.538af9f7.chunk.js.map",
+    "static/js/3.a343be6a.chunk.js": "/Home-Aid-Moving/static/js/3.a343be6a.chunk.js",
+    "static/js/3.a343be6a.chunk.js.map": "/Home-Aid-Moving/static/js/3.a343be6a.chunk.js.map",
+    "index.html": "/Home-Aid-Moving/index.html",
+    "static/css/main.81d26123.chunk.css.map": "/Home-Aid-Moving/static/css/main.81d26123.chunk.css.map",
+    "static/js/2.538af9f7.chunk.js.LICENSE.txt": "/Home-Aid-Moving/static/js/2.538af9f7.chunk.js.LICENSE.txt",
+    "static/media/1.31784023.jpg": "/Home-Aid-Moving/static/media/1.31784023.jpg",
+    "static/media/10.dd414482.jpg": "/Home-Aid-Moving/static/media/10.dd414482.jpg",
+    "static/media/11.cda8b757.jpg": "/Home-Aid-Moving/static/media/11.cda8b757.jpg",
+    "static/media/12.5b63ffee.jpg": "/Home-Aid-Moving/static/media/12.5b63ffee.jpg",
+    "static/media/2.91f22315.jpg": "/Home-Aid-Moving/static/media/2.91f22315.jpg",
+    "static/media/3.28272530.jpg": "/Home-Aid-Moving/static/media/3.28272530.jpg",
+    "static/media/4.422590c2.jpg": "/Home-Aid-Moving/static/media/4.422590c2.jpg",
+    "static/media/5.cf9c2e56.jpg": "/Home-Aid-Moving/static/media/5.cf9c2e56.jpg",
+    "static/media/6.f998acc5.jpg": "/Home-Aid-Moving/static/media/6.f998acc5.jpg",
+    "static/media/7.89e91ec5.jpg": "/Home-Aid-Moving/static/media/7.89e91ec5.jpg",
+    "static/media/8.6610b37b.jpg": "/Home-Aid-Moving/static/media/8.6610b37b.jpg",
+    "static/media/9.e861df3c.jpg": "/Home-Aid-Moving/static/media/9.e861df3c.jpg",
+    "static/media/blankets.eff11b1e.jpg": "/Home-Aid-Moving/static/media/blankets.eff11b1e.jpg",
+    "static/media/boxStack.61a524ff.png": "/Home-Aid-Moving/static/media/boxStack.61a524ff.png",
+    "static/media/header-logo.aec86b71.png": "/Home-Aid-Moving/static/media/header-logo.aec86b71.png",
+    "static/media/movingbox.ae2a17eb.jpg": "/Home-Aid-Moving/static/media/movingbox.ae2a17eb.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.529d2923.js",
+    "static/js/2.538af9f7.chunk.js",
+    "static/css/main.81d26123.chunk.css",
+    "static/js/main.5859189a.chunk.js"
+  ]
+}
