@@ -7,12 +7,14 @@ import AboutUs from "./components/aboutUs.js";
 import Gallery from "./components/gallery.js";
 import Contact from "./components/contact.js";
 import Modal from "./components/modal.js";
+import MobileNav from "./components/mobileNav.js";
 
 function App() {
   const [modal, setModal] = useState({ active: 0, src: null, type: "image" });
+  const [burger, setBurger] = useState({ active: false });
   return (
     <div className="master-container">
-      <Header />
+      <Header burger={burger} setBurger={setBurger} active={burger.active} />
       <Slides />
       <AboutUs />
       <Gallery modal={modal} setModal={setModal} />
@@ -24,6 +26,7 @@ function App() {
         active={modal.active}
         src={modal.src}
       />
+      <MobileNav burger={burger} setBurger={setBurger} active={burger.active} />
     </div>
   );
 }

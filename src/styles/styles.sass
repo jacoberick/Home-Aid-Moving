@@ -100,11 +100,13 @@ $XtraSmall: 'only screen and (max-width: 370px)'
         justify-content: center
 
         .links
-          &:nth-child(2)
+          &:nth-child(1)
             margin-left: 0
 
     @media #{$Medium}
       display: flex
+      z-index: 12
+
       .header-left
 
       .header-right
@@ -199,6 +201,7 @@ $XtraSmall: 'only screen and (max-width: 370px)'
               color: $haBlue
 
     @media #{$Large}
+
       .carousel-inner
         .carousel-item
           img
@@ -310,7 +313,6 @@ $XtraSmall: 'only screen and (max-width: 370px)'
         display: none
 
     @media #{$Medium}
-      padding: 1rem 2rem 4rem 2rem
       .right-about
         .about-title
           font-size: 2.5rem
@@ -327,7 +329,6 @@ $XtraSmall: 'only screen and (max-width: 370px)'
         .description-container
           .about-description
             line-height: 2rem
-
 
   .gallery-container
     padding: 5rem
@@ -402,7 +403,6 @@ $XtraSmall: 'only screen and (max-width: 370px)'
               width: 12.5rem
 
     @media #{$Medium}
-      padding: 3rem
       .photos-container
         .photo-row
           margin-bottom: 1rem
@@ -473,10 +473,15 @@ $XtraSmall: 'only screen and (max-width: 370px)'
         overflow: hidden
         transition: .25s ease
         margin-bottom: 3rem
+        margin-top: 1rem
+
 
         &:hover
           text-decoration: none
           color: $haBlue
+
+        .p-number
+          margin: 0
 
         @media only screen and (max-width: 992px )
           font-size: 7rem
@@ -563,3 +568,41 @@ $XtraSmall: 'only screen and (max-width: 370px)'
         max-width: 75%
         margin: 0 auto
         align-self: center
+
+  @media #{$Medium}
+    .mobile-nav-container
+      display: flex
+      position: fixed
+      z-index: 11
+      top: 0
+      right: 0
+      width: 100%
+      flex-direction: row-reverse
+
+    .active
+
+      .exit-menu
+        width: 20%
+        height: 100vh
+        background-color: rgba(0, 0, 0, 0.6)
+
+      .menu
+        width: 80%
+        height: 100vh
+        background-color: #121212
+        box-shadow: -2px 0 15px #121212
+
+        .link-container
+          div
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            height: 100vh
+
+            .links
+              color: #fefefe
+              font-family: 'Open Sans', sans-serif
+              font-size: 1.7rem
+              margin-bottom: 2rem
+              padding: .5rem
