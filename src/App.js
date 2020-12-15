@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./App.css";
 
 import Header from "./components/header.js";
@@ -27,6 +27,7 @@ function App() {
   return (
     <div className="master-container">
       <Header
+        refs={refs}
         burger={burger}
         setBurger={setBurger}
         active={burger.active}

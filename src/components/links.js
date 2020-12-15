@@ -5,7 +5,7 @@ const Links = ({ burger, setBurger, active, refs }) => {
   const handleClick = (e, ref) => {
     e.preventDefault();
     setBurger({ ...burger, active: 0 });
-    let top = ref.current.offsetTop - refs.header.current.clientHeight;
+    const top = ref.current.offsetTop - refs.header.current.clientHeight;
     $("html, body").animate(
       {
         scrollTop: top,

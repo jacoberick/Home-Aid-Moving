@@ -3,14 +3,29 @@ import HeaderLogo from "../assets/header-logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMobileAlt } from "@fortawesome/free-solid-svg-icons";
 import Links from "./links.js";
+import $ from "jquery";
 
-const Header = ({ burger, setBurger, active, setRef }) => {
+const Header = ({ burger, setBurger, active, setRef, refs }) => {
+  const rtb = () => {
+    $("html, body").animate(
+      {
+        scrollTop: 0,
+      },
+      1000
+    );
+  };
+
   return (
     <div className="header-container" ref={setRef}>
       <div className="header-left">
-        <a href="/">
-          <img className="logo" src={HeaderLogo} alt="Home-Aid Logo" />
-        </a>
+        <button>
+          <img
+            onClick={rtb}
+            className="logo"
+            src={HeaderLogo}
+            alt="Home-Aid Logo"
+          />
+        </button>
       </div>
       <div className="header-right">
         <div
@@ -23,7 +38,12 @@ const Header = ({ burger, setBurger, active, setRef }) => {
         >
           <div className={`burger ${active ? "burger--ex" : ""}`}></div>
         </div>
-        <Links burger={burger} setBurger={setBurger} active={active} />
+        <Links
+          refs={refs}
+          burger={burger}
+          setBurger={setBurger}
+          active={active}
+        />
         <div className="icon-container">
           <FontAwesomeIcon className="icon" icon={faMobileAlt} />
           <div className="number-description">

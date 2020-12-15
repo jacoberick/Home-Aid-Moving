@@ -23,9 +23,19 @@ $XtraSmall: 'only screen and (max-width: 370px)'
     z-index: 2
 
     .header-left
-      .logo
-        width: 10rem
-        background: transparent
+      button
+        border: none
+        background-color: inherit
+        padding: 0
+
+        &:focus
+          outline: none
+
+        .logo
+          width: 10rem
+          background: transparent
+          pointer-events: auto
+
 
     .header-right
       background-color: #121212
@@ -72,9 +82,10 @@ $XtraSmall: 'only screen and (max-width: 370px)'
     //941px MEDIA QUERY
     @media only screen and (max-width: 941px)
       .header-left
-        .logo
-          width: 8rem
-          height: 2.6rem
+        button
+          .logo
+            width: 8rem
+            height: 2.6rem
 
       .header-right
         .links
@@ -152,6 +163,9 @@ $XtraSmall: 'only screen and (max-width: 370px)'
 
               &::after
                 transform: rotate(-45deg) translate(35px, 35px)
+
+    @media #{$Small}
+      padding: 1rem
 
   .slides-container
     height: calc(100vh - 9rem)
@@ -320,6 +334,9 @@ $XtraSmall: 'only screen and (max-width: 370px)'
       .left-about
         display: none
 
+    @media #{$Large}
+      padding: 2rem 1rem
+
     @media #{$Medium}
       .right-about
         .about-title
@@ -330,6 +347,8 @@ $XtraSmall: 'only screen and (max-width: 370px)'
             font-size: 1rem
 
     @media #{$Small}
+      padding: 1rem
+
       .right-about
         .about-title
           font-size: 1.5rem
@@ -346,6 +365,9 @@ $XtraSmall: 'only screen and (max-width: 370px)'
     flex-direction: column
     background-color: #dde2e4
     position: relative
+
+    @media #{$Large}
+      padding: 2rem 0
 
     .gallery-title
       font-size: 3rem
