@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Home-Aid-Moving/static/css/main.f1387fb3.chunk.css",
-    "main.js": "/Home-Aid-Moving/static/js/main.51085d06.chunk.js",
-    "main.js.map": "/Home-Aid-Moving/static/js/main.51085d06.chunk.js.map",
-    "runtime-main.js": "/Home-Aid-Moving/static/js/runtime-main.529d2923.js",
-    "runtime-main.js.map": "/Home-Aid-Moving/static/js/runtime-main.529d2923.js.map",
-    "static/js/2.ec788a7c.chunk.js": "/Home-Aid-Moving/static/js/2.ec788a7c.chunk.js",
-    "static/js/2.ec788a7c.chunk.js.map": "/Home-Aid-Moving/static/js/2.ec788a7c.chunk.js.map",
-    "static/js/3.a343be6a.chunk.js": "/Home-Aid-Moving/static/js/3.a343be6a.chunk.js",
-    "static/js/3.a343be6a.chunk.js.map": "/Home-Aid-Moving/static/js/3.a343be6a.chunk.js.map",
+    "main.css": "/Home-Aid-Moving/static/css/main.937dee03.chunk.css",
+    "main.js": "/Home-Aid-Moving/static/js/main.8b499625.chunk.js",
+    "main.js.map": "/Home-Aid-Moving/static/js/main.8b499625.chunk.js.map",
+    "runtime-main.js": "/Home-Aid-Moving/static/js/runtime-main.8e05038d.js",
+    "runtime-main.js.map": "/Home-Aid-Moving/static/js/runtime-main.8e05038d.js.map",
+    "static/js/2.e5006d76.chunk.js": "/Home-Aid-Moving/static/js/2.e5006d76.chunk.js",
+    "static/js/2.e5006d76.chunk.js.map": "/Home-Aid-Moving/static/js/2.e5006d76.chunk.js.map",
+    "static/js/3.e5011efe.chunk.js": "/Home-Aid-Moving/static/js/3.e5011efe.chunk.js",
+    "static/js/3.e5011efe.chunk.js.map": "/Home-Aid-Moving/static/js/3.e5011efe.chunk.js.map",
     "index.html": "/Home-Aid-Moving/index.html",
-    "static/css/main.f1387fb3.chunk.css.map": "/Home-Aid-Moving/static/css/main.f1387fb3.chunk.css.map",
-    "static/js/2.ec788a7c.chunk.js.LICENSE.txt": "/Home-Aid-Moving/static/js/2.ec788a7c.chunk.js.LICENSE.txt",
+    "static/css/main.937dee03.chunk.css.map": "/Home-Aid-Moving/static/css/main.937dee03.chunk.css.map",
+    "static/js/2.e5006d76.chunk.js.LICENSE.txt": "/Home-Aid-Moving/static/js/2.e5006d76.chunk.js.LICENSE.txt",
     "static/media/1.31784023.jpg": "/Home-Aid-Moving/static/media/1.31784023.jpg",
     "static/media/10.dd414482.jpg": "/Home-Aid-Moving/static/media/10.dd414482.jpg",
     "static/media/11.cda8b757.jpg": "/Home-Aid-Moving/static/media/11.cda8b757.jpg",
@@ -30,9 +30,9 @@
     "static/media/movingbox.ae2a17eb.jpg": "/Home-Aid-Moving/static/media/movingbox.ae2a17eb.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.529d2923.js",
-    "static/js/2.ec788a7c.chunk.js",
-    "static/css/main.f1387fb3.chunk.css",
-    "static/js/main.51085d06.chunk.js"
+    "static/js/runtime-main.8e05038d.js",
+    "static/js/2.e5006d76.chunk.js",
+    "static/css/main.937dee03.chunk.css",
+    "static/js/main.8b499625.chunk.js"
   ]
 }
