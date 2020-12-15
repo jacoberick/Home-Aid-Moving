@@ -12,7 +12,7 @@ import galleryTen from "../assets/imgs/gallery/10.jpg";
 import galleryEleven from "../assets/imgs/gallery/11.jpg";
 import galleryTwelve from "../assets/imgs/gallery/12.jpg";
 
-const gallery = ({ modal, setModal }) => {
+const gallery = ({ modal, setModal, setRef }) => {
   const allPhotos = [
     {
       id: 1,
@@ -49,7 +49,7 @@ const gallery = ({ modal, setModal }) => {
   ];
 
   return (
-    <div id="galleryContainer" className="gallery-container">
+    <div id="galleryContainer" className="gallery-container" ref={setRef}>
       <h1 className="gallery-title">Gallery</h1>
       <div className="photos-container">
         {allPhotos.map((row, id) => (

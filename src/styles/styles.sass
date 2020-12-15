@@ -125,6 +125,8 @@ $XtraSmall: 'only screen and (max-width: 370px)'
             height: 4px
             border-radius: 5px
             background-color: #fefefe
+            transform: translateX(0px)
+            transition: .25s
 
             &::before, &::after
               content: ''
@@ -133,17 +135,23 @@ $XtraSmall: 'only screen and (max-width: 370px)'
               height: 4px
               background-color: #fefefe
               border-radius: 5px
+              transition: .25s ease-in-out
 
             &::before
-              transform: translateY(-12px)
+              transform: rotate(0deg) translateY(-12px)
 
             &::after
-              transform: translateY(12px)
+              transform: rotate(0deg) translateY(12px)
 
-    @media #{$Small}
-      .header-left
-        .logo
+            &.burger--ex
+              transform: translateX(-50px)
+              background-color: transparent
 
+              &::before
+                transform: rotate(45deg) translate(35px, -35px)
+
+              &::after
+                transform: rotate(-45deg) translate(35px, 35px)
 
   .slides-container
     height: calc(100vh - 9rem)
@@ -569,40 +577,45 @@ $XtraSmall: 'only screen and (max-width: 370px)'
         margin: 0 auto
         align-self: center
 
-  @media #{$Medium}
-    .mobile-nav-container
-      display: flex
-      position: fixed
-      z-index: 11
-      top: 0
-      right: 0
-      width: 100%
-      flex-direction: row-reverse
+  .mobile-nav-container
+    display: flex
+    position: fixed
+    z-index: 11
+    top: 0
+    right: 0
+    width: 100%
+    flex-direction: row-reverse
 
-    .active
+    .exit-menu
+      width: 20%
+      height: 100vh
+      background-color: rgba(0, 0, 0, 0.6)
 
-      .exit-menu
-        width: 20%
-        height: 100vh
-        background-color: rgba(0, 0, 0, 0.6)
+    .menu
+      width: 80%
+      height: 100vh
+      background-color: #121212
+      box-shadow: -2px 0 15px #121212
 
-      .menu
-        width: 80%
-        height: 100vh
-        background-color: #121212
-        box-shadow: -2px 0 15px #121212
+      .link-container
+        div
+          display: flex
+          flex-direction: column
+          align-items: center
+          justify-content: center
+          height: 100vh
 
-        .link-container
-          div
-            display: flex
-            flex-direction: column
-            align-items: center
-            justify-content: center
-            height: 100vh
+          .links
+            color: #fefefe
+            font-family: 'Open Sans', sans-serif
+            font-size: 1.7rem
+            margin-bottom: 2rem
+            padding: .5rem
 
-            .links
-              color: #fefefe
-              font-family: 'Open Sans', sans-serif
-              font-size: 1.7rem
-              margin-bottom: 2rem
-              padding: .5rem
+  .slide-in
+    transform: translateX(0)
+    transition: .25s ease-in
+
+  .slide-out
+    transform: translateX(100%)
+    transition: .25s ease-in-out

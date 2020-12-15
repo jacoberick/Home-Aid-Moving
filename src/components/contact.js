@@ -1,8 +1,8 @@
 import React from "react";
 
-const Contact = () => {
+const Contact = ({ setRef }) => {
   return (
-    <div id="contactContainer" className="contact-container">
+    <div id="contactContainer" className="contact-container" ref={setRef}>
       <h1 className="contact-title">Give us a call!</h1>
       <div className="contact-content">
         <a className="phone-number" href="tel:615-482-4796">

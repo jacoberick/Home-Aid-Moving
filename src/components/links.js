@@ -1,8 +1,17 @@
 import React from "react";
+import $ from "jquery";
 
-const Links = ({ burger, setBurger, active }) => {
-  const handleClick = () => {
+const Links = ({ burger, setBurger, active, refs }) => {
+  const handleClick = (e, ref) => {
+    e.preventDefault();
     setBurger({ ...burger, active: 0 });
+    let top = ref.current.offsetTop - refs.header.current.clientHeight;
+    $("html, body").animate(
+      {
+        scrollTop: top,
+      },
+      1000
+    );
   };
 
   return (
@@ -15,20 +24,24 @@ const Links = ({ burger, setBurger, active }) => {
       >
         Testimonials
       </a>
-      <a className="links" href="#aboutContainer" onClick={() => handleClick()}>
+      <a
+        className="links"
+        href="#aboutContainer"
+        onClick={(e) => handleClick(e, refs.about)}
+      >
         About Us
       </a>
       <a
         className="links"
         href="#galleryContainer"
-        onClick={() => handleClick()}
+        onClick={(e) => handleClick(e, refs.gallery)}
       >
         Gallery
       </a>
       <a
         className="links"
         href="#contactContainer"
-        onClick={() => handleClick()}
+        onClick={(e) => handleClick(e, refs.contact)}
       >
         Contact
       </a>

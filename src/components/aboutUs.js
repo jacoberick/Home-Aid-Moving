@@ -1,7 +1,7 @@
 import React from "react";
 import BoxStack from "../assets/imgs/boxStack.png";
 
-const AboutUs = () => {
+const AboutUs = ({ setRef }) => {
   const description = `At Home-Aid Moving we understand how stressful moving day is. Our
   job is to make that stressful day, stress free. Our teams offer 6+
   years of experience, a hard work ethic, and a smile day in and day
@@ -19,7 +19,7 @@ const AboutUs = () => {
   purchasing Home-Aid Moving services your purchasing Peace of Mind.`;
 
   return (
-    <div className="about-container" id="aboutContainer">
+    <div className="about-container" id="aboutContainer" ref={setRef}>
       <div className="container">
         <div className="left-about">
           <img className="box-stack-img" src={BoxStack} alt="" />

@@ -4,11 +4,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMobileAlt } from "@fortawesome/free-solid-svg-icons";
 import Links from "./links.js";
 
-const Header = ({ burger, setBurger, active }) => {
+const Header = ({ burger, setBurger, active, setRef }) => {
   return (
-    <div className="header-container">
+    <div className="header-container" ref={setRef}>
       <div className="header-left">
-        <img className="logo" src={HeaderLogo} alt="Home-Aid Logo" />
+        <a href="/">
+          <img className="logo" src={HeaderLogo} alt="Home-Aid Logo" />
+        </a>
       </div>
       <div className="header-right">
         <div
@@ -19,7 +21,7 @@ const Header = ({ burger, setBurger, active }) => {
               : setBurger({ ...burger, active: true });
           }}
         >
-          <div className="burger"></div>
+          <div className={`burger ${active ? "burger--ex" : ""}`}></div>
         </div>
         <Links burger={burger} setBurger={setBurger} active={active} />
         <div className="icon-container">
