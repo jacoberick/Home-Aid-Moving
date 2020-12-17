@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Home-Aid Moving Website
+The home site for the moving company Home-Aid.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Live!
+https://jacoberick.github.io/Home-Aid-Moving/
 
 ## Available Scripts
 
