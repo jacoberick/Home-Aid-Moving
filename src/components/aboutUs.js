@@ -16,7 +16,7 @@ const AboutUs = ({ setRef }) => {
   experienced planning team asses your move and schedule a move time
   most convenient for you. Our team will arrive on time and ready to
   make sure the move is the last thing you have to worry about. When
-  purchasing Home-Aid Moving services your purchasing Peace of Mind.`;
+  purchasing Home-Aid Moving services you're purchasing Peace of Mind.`;
 
   return (
     <div className="about-container" id="aboutContainer" ref={setRef}>
