@@ -1,5 +1,6 @@
 import React from "react";
 import HeaderLogo from "../assets/header-logo.png";
+import bbbLogo from "../assets/logos/bbb.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMobileAlt } from "@fortawesome/free-solid-svg-icons";
 import Links from "./links.js";
@@ -26,6 +27,12 @@ const Header = ({ burger, setBurger, active, setRef, refs }) => {
             alt="Home-Aid Logo"
           />
         </button>
+        <a
+          target="_blank"
+          href="https://www.bbb.org/us/tn/columbia/profile/moving-services/home-aid-moving-0573-37352349"
+        >
+          <img src={bbbLogo} alt="BBB Logo" id="bbb" />
+        </a>
       </div>
       <div className="header-right">
         <div
