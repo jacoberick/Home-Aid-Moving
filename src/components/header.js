@@ -29,6 +29,7 @@ const Header = ({ burger, setBurger, active, setRef, refs }) => {
         </button>
         <a
           target="_blank"
+          rel="noreferrer"
           href="https://www.bbb.org/us/tn/columbia/profile/moving-services/home-aid-moving-0573-37352349"
         >
           <img src={bbbLogo} alt="BBB Logo" id="bbb" />
