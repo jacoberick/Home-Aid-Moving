@@ -1,8 +1,13 @@
-import React from "react";
-import BoxStack from "../assets/imgs/boxStack.png";
+import React from "react"
+import BoxStack from "../assets/imgs/boxStack.png"
 
 const AboutUs = ({ setRef }) => {
-  const description = `At Home-Aid Moving we understand how stressful moving day is. Our job is to make that stressful day, stress free. Our teams offer 8+ years of experience, a hard work ethic, and a smile day in and day out. Home-Aid Moving also strives to offer the best rates around. Services provided are Labor Only (Movers Only), as well as Full Service Truck Moves (Movers +  26ft Box truck). Our movers show up to both labor only and full service moves, fully equipped with all the moving equipment and blankets needed to keep your belongings safe. At Home-Aid we realize there is already so much to worry about on moving day; Could be anything from taking the kids to daycare, to getting the utilities switched over to the new place. Let our experienced planning team assess your move and schedule a move time most convenient for you. Our team will arrive on time and ready to make sure the move is the last thing you have to worry about. When purchasing Home-Aid Moving services you're purchasing Peace of Mind.`;
+  const descArr = [
+    "At Home-Aid Moving, we understand the anxiety and hassle that comes with moving day. Our company is dedicated to providing a seamless and stress-free moving experience for our clients. Our highly experienced team of movers has over 8 years of expertise in the industry, and we pride ourselves on our strong work ethic and friendly demeanor. Additionally, we are committed to providing the most competitive rates in the market.",
+    "Our company offers both Labor-Only services (Movers Only) and Full-Service Truck Moves (Movers + 26ft Box truck). Regardless of the type of move you require, our movers will arrive fully equipped with all the necessary moving equipment and blankets to safeguard your belongings.",
+    "We understand that moving day can be overwhelming, and our company's goal is to alleviate any additional stressors. Our professional planning team will work with you to assess your move and create a schedule that is convenient for you. We will arrive promptly on the day of your move, ensuring that the process is the last thing you have to worry about.",
+    "In selecting Home-Aid Moving, you are not only selecting a professional and dependable moving service, but you are also investing in peace of mind.",
+  ]
 
   return (
     <div className="about-container" id="aboutContainer" ref={setRef}>
@@ -13,12 +18,16 @@ const AboutUs = ({ setRef }) => {
         <div className="right-about">
           <h2 className="about-title">Who we are...</h2>
           <div className="description-container">
-            <p className="about-description">{description}</p>
+            {descArr.map((x, key) => (
+              <p className="about-description" key={key}>
+                {x}
+              </p>
+            ))}
           </div>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default AboutUs;
+export default AboutUs
