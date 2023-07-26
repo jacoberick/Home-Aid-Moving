@@ -22,7 +22,7 @@ const AboutUs = ({ setRef }) => {
           <div className="description-container">
             <p className="about-description">{descArr[0]}</p>
           </div>
-          <h2 className="about-title">Who we are</h2>
+          <h2 className="about-title">Who We Are</h2>
           <div className="description-container">
             <p className="about-description">{descArr[1]}</p>
           </div>
