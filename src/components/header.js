@@ -1,5 +1,5 @@
 import React from "react";
-import HeaderLogo from "../assets/header-logo.png";
+import HeaderLogo from "../assets/header-logo.jpg";
 import bbbLogo from "../assets/logos/bbb.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMobileAlt } from "@fortawesome/free-solid-svg-icons";
